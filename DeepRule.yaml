@@ -1,0 +1,5 @@
+name: CornerNet
+channels:
+  - defaults
+prefix: /home/t-juluo/conda/envs/CornerNet
+

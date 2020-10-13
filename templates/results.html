@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+    <img src={{image}}  alt="Original" />
+    <img src={{image_painted}}  alt="Marked" />
+    <br/>
+    <h2>Type</h2>
+    <br/>
+    {{Type}}
+    <br/>
+    <h2>Y Range</h2>
+    <br/>
+    {{min2max}}
+    <br/>
+    <form method="post" enctype="multipart/form-data">
+    <div class="form_block">
+    min value: <input type="text" name="min"/>
+    </div>
+    <div class="form_block">
+    max value: <input type="text" name="max"/>
+    </div>
+    <button type="submit">Upload</button>
+    </form>
+    <h2>Data</h2>
+    <br/>
+    <pre>
+    {{data|linebreaks}}
+    </pre>
+    <br/>
+    <h2>ChartTitle</h2>
+    <br/>
+    {{ChartTitle}}
+    <br/>
+    <h2>ValueAxisTitle</h2>
+    <br/>
+    {{ValueAxisTitle}}
+    <br/>
+    <h2>CategoryAxisTitle</h2>
+    <br/>
+    {{CategoryAxisTitle}}
+</body>
+</html>
