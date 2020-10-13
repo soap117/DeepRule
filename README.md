@@ -37,9 +37,10 @@ make
 ```
 
 ### Downloading CHARTEX Data
-- Unzip the file 
+- Unzip the file to the data path
 ### Downloading Trained File
-- Unzip the data.zip to current path 
+- [data link](https://drive.google.com/file/d/1qtCLlzKm8mx7kQOV1criUbqcGnNh58Rr/view?usp=sharing)
+- Unzip the file to current root path 
 ## Training and Evaluation
 To train and evaluate a network, you will need to create a configuration file, which defines the hyperparameters, and a model file, which defines the network architecture. The configuration file should be in JSON format and placed in `config/`. Each configuration file should have a corresponding model file in `models/`. i.e. If there is a `<model>.json` in `config/`, there should be a `<model>.py` in `models/`. There is only one exception which we will mention later.
 The cfg file names of our proposed modules are as follows:
