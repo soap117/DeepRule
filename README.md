@@ -37,6 +37,10 @@ make
 ```
 
 ### Downloading CHARTEX Data
+- [Pie data](https://drive.google.com/file/d/1inUIjmRfgPJr9p90JIRTEBPv-ylxQmyD/view?usp=sharing)
+- [Line data](https://drive.google.com/file/d/1bnuHyExM6JagB1caRfLVr20vef4nesi9/view?usp=sharing)
+- [Bar data](https://drive.google.com/file/d/19Wt04WsnS1pNAffZqjpSBF-Klf4t3b9C/view?usp=sharing)
+- [Cls data](https://drive.google.com/file/d/143_WZT_9_oozOxzWCxBfuxN1J1JKa3Kv/view?usp=sharing)
 - Unzip the file to the data path
 ### Downloading Trained File
 - [data link](https://drive.google.com/file/d/1qtCLlzKm8mx7kQOV1criUbqcGnNh58Rr/view?usp=sharing)
