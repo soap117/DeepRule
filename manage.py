@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import sys
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]="2,3"
+#os.environ["CUDA_VISIBLE_DEVICES"]="2,3"
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'server_match.settings')
