@@ -106,13 +106,13 @@ def Pre_load_nets():
     testing_pie = importlib.import_module(path).testing
     methods['Pie'] = [db_pie, nnet_pie, testing_pie]
     db_line, nnet_line = load_net(50000, "CornerNetLine", "data/linedata(1028)", "data/linedata(1028)/cache",
-                                  "data/linedata(1028)/result", 1)
+                                  "data/linedata(1028)/result")
     path = 'testfile.test_%s' % "CornerNetLine"
     testing_line = importlib.import_module(path).testing
     methods['Line'] = [db_line, nnet_line, testing_line]
     db_line_cls, nnet_line_cls = load_net(20000, "CornerNetLineClsReal", "data/linedata(1028)",
                                           "data/linedata(1028)/cache",
-                                          "data/linedata(1028)/result", 1)
+                                          "data/linedata(1028)/result")
     path = 'testfile.test_%s' % "CornerNetLineCls"
     testing_line_cls = importlib.import_module(path).testing
     methods['LineCls'] = [db_line_cls, nnet_line_cls, testing_line_cls]
