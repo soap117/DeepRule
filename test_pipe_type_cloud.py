@@ -230,6 +230,8 @@ def parse_args():
     parser.add_argument("--image_path", dest="image_path", help="test images", default="test", type=str)
     parser.add_argument("--save_path", dest="save_path", help="where to save results", default="save", type=str)
     parser.add_argument("--type", dest="type", help="type of images", default="Bar", type=str)
+    parser.add_argument("--data_dir", dest="data_dir", default="data/linedata(1028)", type=str)
+    parser.add_argument('--cache_path', dest="cache_path", type=str)
     args = parser.parse_args()
     return args
 
