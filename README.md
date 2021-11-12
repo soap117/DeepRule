@@ -51,7 +51,8 @@ It’s the three critical points for a sector of the pie graph.
 - For the line data<br/>
 {"image_id": 120596, "category_id": 0, "bbox": [137.0, 131.0, 174.0, 113.0, 210.0, 80.0, 247.0, 85.0], "area": 0, "id": 288282}<br/>
 The meaning of the bbox is [d_1_x, d_1_y, …., d_n_x,d_n_y]<br/>
-It’s the data points for a line in the image with image_id.
+It’s the data points for a line in the image with image_id.<br/>
+instancesLineClsEx is used for training the LineCls.
 
 - For the Bar data<br/>
 Just the bounding box of the bars.
