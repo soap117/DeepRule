@@ -3,7 +3,7 @@ Compete code of DeepRule
 ## Getting Started
 Please first install [Anaconda](https://anaconda.org) and create an Anaconda environment using the provided package list.
 ```
- conda create  --DeepRule python-course --file DeepRule.txt
+ conda create  --name DeepRule --file DeepRule.txt
 ```
 
 After you create the environment, activate it.
