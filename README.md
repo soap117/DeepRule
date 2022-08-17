@@ -61,6 +61,12 @@ Just the bounding box of the bars.
 - For the cls data<br/>
 Just the bounding box.<br/>
 But different category_id refers to different components like the draw area, title and legends.
+### OCR API (Updated on 08/17/2022)
+I am longger working at the microsoft, many features rely on the webservice may be out of date.
+The origninal OCR API requests the AZURE service. For people who do not have the AZURE service, pytesseract python pacakge may be a good replacment.
+However, you need to rewrite ocr_result(image_path) funtion. The key output of this function is the bounding box of the words and the str version of the words.
+E.g., word_info["text"]='Hello', word_info["boundingBox"] = [1, 2, 67, 78]
+The boudningBox is the topleft_x, topleft_y, bottomleft_x, bottomlef_y.
 
 ### Downloading Trained File
 - [data link](https://drive.google.com/file/d/1qtCLlzKm8mx7kQOV1criUbqcGnNh58Rr/view?usp=sharing)
