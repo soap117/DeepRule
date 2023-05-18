@@ -32,10 +32,7 @@ make
 ### Installing MS COCO APIs
 You also need to install the MS COCO APIs.
 ```
-cd <CornerNet dir>/data
-git clone git@github.com:cocodataset/cocoapi.git coco
-cd <CornerNet dir>/data/coco/PythonAPI
-make
+pip install pycocotools
 ```
 
 ### Downloading CHARTEX Data
