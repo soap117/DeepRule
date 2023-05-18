@@ -19,7 +19,7 @@ Please check the latest CornerNet on github if you find problems.
 https://github.com/princeton-vl/CornerNet
 ```
 cd <CornerNet dir>/models/py_utils/_cpools/
-python setup.py build_ext --inplace
+python setup.py build_ext --user
 ```
 
 ### Compiling NMS
