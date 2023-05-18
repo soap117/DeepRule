@@ -65,7 +65,8 @@ The origninal OCR API requests the AZURE service. For people who do not have the
 However, you need to rewrite ocr_result(image_path) funtion. The key output of this function is the bounding box of the words and the str version of the words.
 E.g., word_info["text"]='Hello', word_info["boundingBox"] = [1, 2, 67, 78]
 The boudningBox is the topleft_x, topleft_y, bottomleft_x, bottomlef_y.
-
+### environment (Updated on 05/18/2023)
+If you are not able to install the old environment, try the new env file “requirements-2023.txt”
 ### Downloading Trained File
 - [data link](https://drive.google.com/file/d/1qtCLlzKm8mx7kQOV1criUbqcGnNh58Rr/view?usp=sharing)
 - Unzip the file to current root path 
