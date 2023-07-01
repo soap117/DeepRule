@@ -73,7 +73,7 @@ def kp_detection(db, k_ind, data_aug, debug):
     br_regrs    = np.zeros((batch_size, max_tag_len, 2), dtype=np.float32)
     tl_tags     = np.zeros((batch_size, max_tag_len), dtype=np.int64)
     br_tags     = np.zeros((batch_size, max_tag_len), dtype=np.int64)
-    tag_masks   = np.zeros((batch_size, max_tag_len), dtype=np.uint8)
+    tag_masks   = np.zeros((batch_size, max_tag_len), dtype=np.bool_)
     tag_lens    = np.zeros((batch_size, ), dtype=np.int32)
 
     db_size = db.db_inds.size
