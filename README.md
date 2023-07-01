@@ -16,6 +16,7 @@ Our current implementation only supports GPU so you need a GPU and need to have 
 ### Compiling Corner Pooling Layers
 You need to compile the C++ implementation of corner pooling layers. 
 Please check the latest CornerNet on github if you find problems.
+Just fix some warning bugs.
 https://github.com/princeton-vl/CornerNet
 ```
 cd <CornerNet dir>/models/py_utils/_cpools/
