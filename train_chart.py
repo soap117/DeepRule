@@ -25,7 +25,8 @@ from db.datasets import datasets
 import time
 torch.backends.cudnn.enabled   = True
 torch.backends.cudnn.benchmark = True
-
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning) 
 def parse_args():
     parser = argparse.ArgumentParser(description="Train CornerNet")
     parser.add_argument("--cfg_file", dest="cfg_file", help="config file", default="CornerNet", type=str)
