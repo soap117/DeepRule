@@ -54,7 +54,7 @@ std::vector<at::Tensor> top_pool_backward(
     for (int32_t ind = 1; ind < height; ++ind) {
         input_temp = input.select(2, height - ind - 1);
         at::gt_out(gt_mask, input_temp, max_val);
-
+        max_temp.resize_(0);
         at::masked_select_out(max_temp, input_temp, gt_mask);
         max_val.masked_scatter_(gt_mask, max_temp);
         max_ind.masked_fill_(gt_mask, height - ind - 1);
