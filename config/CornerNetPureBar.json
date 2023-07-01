@@ -1,7 +1,7 @@
 {
     "system": {
         "dataset": "Bar",
-        "batch_size": 26,
+        "batch_size": 2,
         "sampling_function": "kp_detection",
 
         "train_split": "trainchart",
