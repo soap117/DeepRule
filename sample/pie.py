@@ -72,7 +72,7 @@ def kp_detection(db, k_ind, data_aug, debug):
     center_tags     = np.zeros((batch_size, max_tag_len), dtype=np.int64)
     key_tags_tl     = np.zeros((batch_size, max_tag_len), dtype=np.int64)
     key_tags_br = np.zeros((batch_size, max_tag_len), dtype=np.int64)
-    tag_masks   = np.zeros((batch_size, max_tag_len), dtype=np.uint8)
+    tag_masks   = np.zeros((batch_size, max_tag_len), dtype=np.bool_)
     tag_lens    = np.zeros((batch_size, ), dtype=np.int32)
 
     db_size = db.db_inds.size
