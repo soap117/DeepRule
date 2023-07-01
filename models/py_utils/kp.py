@@ -2013,7 +2013,7 @@ class AELoss(nn.Module):
 
         gt_tl_heat = targets[0]
         gt_br_heat = targets[1]
-        gt_mask    = targets[2]
+        gt_mask    = targets[2].to(torch.bool)
         gt_tl_regr = targets[3]
         gt_br_regr = targets[4]
 
@@ -2074,7 +2074,7 @@ class AELossPureCls(nn.Module):
 
         gt_tl_heat = targets[0]
         gt_br_heat = targets[1]
-        gt_mask    = targets[2]
+        gt_mask    = targets[2].to(torch.bool)
         gt_tl_regr = targets[3]
         gt_br_regr = targets[4]
         gt_cls     = targets[5]
@@ -2126,8 +2126,8 @@ class AELossLineCls(nn.Module):
         ng_predictions = outs[1::stride]
         ps_ind = targets[0].view(-1)
         ng_ind = targets[1].view(-1)
-        ps_mask = targets[2].view(-1)
-        ng_mask = targets[2].view(-1)
+        ps_mask = targets[2].view(-1).to(torch.bool)
+        ng_mask = targets[2].view(-1).to(torch.bool)
         # focal loss
         cls_loss = 0
         for ps_pre, ng_pre in zip(ps_predictions, ng_predictions):
@@ -2163,8 +2163,8 @@ class AELossLineClsFocal(nn.Module):
         ng_predictions = outs[1::stride]
         ps_ind = targets[0].view(-1)
         ng_ind = targets[1].view(-1)
-        ps_mask = targets[2].view(-1)
-        ng_mask = targets[2].view(-1)
+        ps_mask = targets[2].view(-1).to(torch.bool)
+        ng_mask = targets[2].view(-1).to(torch.bool)
         # focal loss
         cls_loss = 0
         for ps_pre, ng_pre in zip(ps_predictions, ng_predictions):
@@ -2209,7 +2209,7 @@ class AELossLine(nn.Module):
 
         gt_key_heat = targets[0]
         gt_hybrid_heat = targets[1]
-        gt_mask    = targets[2]
+        gt_mask    = targets[2].to(torch.bool)
         gt_mask_grouped = targets[3]
         gt_key_regr = targets[4]
 
@@ -2264,7 +2264,7 @@ class AELossPurePie(nn.Module):
 
         gt_center_heat = targets[0]
         gt_key_heat = targets[1]
-        gt_mask    = targets[2]
+        gt_mask    = targets[2].to(torch.bool)
         gt_center_regr = targets[3]
         gt_key_regr_tl = targets[4]
         gt_key_regr_br = targets[5]
@@ -2312,7 +2312,7 @@ class AELossPure(nn.Module):
 
         gt_tl_heat = targets[0]
         gt_br_heat = targets[1]
-        gt_mask    = targets[2]
+        gt_mask    = targets[2].to(torch.bool)
         gt_tl_regr = targets[3]
         gt_br_regr = targets[4]
 
